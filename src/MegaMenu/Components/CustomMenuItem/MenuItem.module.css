@@ -1,0 +1,75 @@
+.dropdownMenu {
+  display: flex;
+  color: #aaa;
+  height: 48px;
+  align-items: center;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+.dropdownTrigger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+}
+.activeDropdownMenu {
+  color: white !important;
+  display: flex;
+  height: 46px;
+  align-items: center;
+  background-color: #31363f;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+.dropdownOptions,
+.bigDropdownOptions {
+  position: absolute;
+  background-color: #31363f;
+  padding: 0; /* Keep only common properties */
+  margin: 0; /* Keep only common properties */
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.bigDropdownOptions {
+  padding: 15px; /* Override padding for .bigDropdownOptions */
+  left: 18%;
+  width: 850px;
+  gap: 50px;
+  border-radius: 10px;
+}
+.dropdownOptions li,
+.bigDropdownOptions li {
+  padding: 15px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.dropdownOptions li:hover,
+.bigDropdownOptions li:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+.bigDropdownOptions li:hover {
+  border-radius: 10px;
+}
+.profileIcon {
+  color: #42627c;
+  font-size: 32px !important;
+}
+.optionsTitle {
+  font-weight: bold;
+  padding: 15px;
+  color: white;
+}
+.optionsWrapper,
+.bigOptionsWrapper {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+.bigOptionsWrapper {
+  height: 300px;
+}

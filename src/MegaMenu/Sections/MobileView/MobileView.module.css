@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+  color: white;
+}
+.backDrop {
+  width: 100%;
+  height: 100vh;
+  background: #31363f;
+  top: 48px;
+  right: 0;
+  position: absolute;
+  height: 100%;
+}

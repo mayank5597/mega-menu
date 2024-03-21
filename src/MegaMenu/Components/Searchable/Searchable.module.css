@@ -1,0 +1,17 @@
+.searchIcon {
+  font-size: 32px !important;
+}
+.wrapper {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.modalWrapper {
+  background-color: #808080;
+  height: 100px !important;
+  width: 800px;
+  position: absolute;
+  left: 26%;
+  text-align: center;
+}

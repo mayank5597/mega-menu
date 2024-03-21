@@ -1,0 +1,41 @@
+.navBarContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #0f1111;
+  min-height: 48px;
+  color: #aaa;
+}
+.maxWidthCtn {
+  height: 48px;
+  max-width: 995px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.text {
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.hideOnDesktop {
+  display: none;
+}
+@media screen and (max-width: 880px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .hideOnDesktop {
+    display: block;
+  }
+  .menuWrapper {
+    color: white;
+  }
+}
