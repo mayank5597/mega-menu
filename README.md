@@ -34,4 +34,7 @@ To build the project for production, use the following command:
 If you're using npm: `npm build`
 
 
+## Building the mega menu by JSON
+file path: `src/MegaMenu/MegaMenu.constants.js`
+JSON file name: `MegaMenu.constants.js`
 
