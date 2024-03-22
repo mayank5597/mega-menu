@@ -57,6 +57,7 @@ const useMegaMenu = () => {
         <CustomMenuItem
           data={data}
           toggleMenuOpen={toggleMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
           toggleMenuClose={toggleMenuClose}
           isOpen={getHoverId === id} // Checking if current item is hovered
         />

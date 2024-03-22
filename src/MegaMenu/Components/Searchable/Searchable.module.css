@@ -15,3 +15,10 @@
   left: 26%;
   text-align: center;
 }
+
+@media screen and (max-width: 880px) {
+  .modalWrapper {
+    width: 100%;
+    left: 0;
+  }
+}

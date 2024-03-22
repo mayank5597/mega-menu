@@ -73,3 +73,10 @@
 .bigOptionsWrapper {
   height: 300px;
 }
+
+@media screen and (max-width: 880px) {
+  .dropdownOptions {
+    left: 0;
+    width: 100%;
+  }
+}

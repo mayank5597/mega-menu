@@ -5,7 +5,13 @@ import KeyboardArrowUpRoundedIcon from "@mui/icons-material/KeyboardArrowUpRound
 import OptionsMenu from "./OptionsMenu"; // Importing OptionsMenu component
 
 // Functional component for CustomMenuItem
-const CustomMenuItem = ({ data, toggleMenuOpen, toggleMenuClose, isOpen }) => {
+const CustomMenuItem = ({
+  data,
+  toggleMenuOpen,
+  toggleMenuClose,
+  isOpen,
+  setIsMenuOpen,
+}) => {
   // Destructuring properties from data object
   const { value, icon: Icon, id, options } = data;
 
@@ -17,7 +23,10 @@ const CustomMenuItem = ({ data, toggleMenuOpen, toggleMenuClose, isOpen }) => {
     <>
       <div
         className={isOpen ? styles.activeDropdownMenu : styles.dropdownMenu} // Conditional class based on isOpen state
-        onMouseEnter={() => toggleMenuOpen(id)} // Event handler for mouse enter
+        onMouseEnter={() => {
+          toggleMenuOpen(id);
+          setIsMenuOpen(false);
+        }} // Event handler for mouse enter
         onMouseLeave={toggleMenuClose} // Event handler for mouse leave
       >
         <div className={styles.dropdownTrigger}>

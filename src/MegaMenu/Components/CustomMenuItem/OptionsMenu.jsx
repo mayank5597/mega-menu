@@ -20,7 +20,7 @@ const OptionsMenu = ({
 
         // Returning JSX for rendering options menu
         return (
-          <div>
+          <div key={optionsTitle + optionValue}>
             {/* Rendering options title if available */}
             {optionsTitle && (
               <div key={optionValue} className={styles.optionsTitle}>

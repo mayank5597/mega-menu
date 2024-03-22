@@ -9,10 +9,37 @@
 }
 .backDrop {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #31363f;
   top: 48px;
   right: 0;
   position: absolute;
-  height: 100%;
+  padding: 15px 0px;
+}
+.listWrapper {
+  background-color: #b4b4b8;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+}
+.listTextWrapper {
+  padding: 10px 5px;
+}
+.listTitle {
+  color: #31363f;
+  padding: 10px 0px;
+}
+@media screen and (max-width: 880px) {
+  .menuItemText,
+  .activeMenuItemText {
+    padding: 10px 15px;
+    color: #aaa;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  .activeMenuItemText {
+    background-color: #fff;
+    color: black;
+  }
 }
