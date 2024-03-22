@@ -79,4 +79,7 @@
     left: 0;
     width: 100%;
   }
+  .dropdownOptions li:hover {
+    width: 100vw;
+  }
 }
