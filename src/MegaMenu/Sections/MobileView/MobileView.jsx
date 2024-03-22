@@ -49,9 +49,12 @@ const MobileView = (props) => {
                     : styles.menuItemText
                 }
                 onClick={() => {
-                  if (data[item].id === selectedId) {
-                    setSelectedId();
-                  } else setSelectedId(data[item].id);
+                  if (
+                    data[item].id !== selectedId &&
+                    data[item].type === "menuItem"
+                  ) {
+                    setSelectedId(data[item].id);
+                  } else setSelectedId();
                 }}
               >
                 {data[item].value}
